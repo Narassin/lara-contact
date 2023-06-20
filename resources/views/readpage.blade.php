@@ -13,7 +13,7 @@
         <h1>Name</h1>
         <input id="name" name="name" type="text" value="{{ $dataload->name }}">
         <h2>Phone</h2>
-        <input id="phone" name="phone" type="number" value="{{ $dataload->phone }}">
+        <input id="port" name="phone" type="number" value="{{ $dataload->phone }}">
         <input type="submit" value="Submit">
     </form>
 

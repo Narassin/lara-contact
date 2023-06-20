@@ -9,6 +9,7 @@ class InfoController extends Controller
 {
     public function index() {
         $payloads = Info::select('*')
+        ->orderBy('created_at','desc')
         ->get();
 
         return view('indexpage',compact(
