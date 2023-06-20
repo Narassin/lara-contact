@@ -22,7 +22,7 @@ class InfoController extends Controller
 
         Info::create([
             'name'=>$request->name,
-            'phone'=>$request->phone,
+            'port'=>$request->port,
         ]);
 
 
@@ -52,7 +52,7 @@ class InfoController extends Controller
 
         Info::where('id',$id)->update([
             'name'=>$request->name,
-            'phone'=>$request->phone,
+            'port'=>$request->port,
         ]);
 
         return redirect()->back();

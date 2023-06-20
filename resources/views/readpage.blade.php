@@ -10,10 +10,10 @@
     {{ $dataload }}
     <form method="POST" action="{{ route('info.update',['id'=>$dataload->id]) }}">
         @csrf
-        <h1>Name</h1>
+        <h1>Server</h1>
         <input id="name" name="name" type="text" value="{{ $dataload->name }}">
-        <h2>Phone</h2>
-        <input id="port" name="phone" type="number" value="{{ $dataload->phone }}">
+        <h2>Port</h2>
+        <input id="port" name="port" type="number" value="{{ $dataload->port }}">
         <input type="submit" value="Submit">
     </form>
 

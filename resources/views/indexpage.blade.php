@@ -7,8 +7,8 @@
         <p>Name</p>
         <input id="name" name="name" type="text">
         <br>
-        <p>Phone</p>
-        <input id="phone" name="phone" type="number">
+        <p class="pt-2">Port</p>
+        <input id="port" name="port" type="number">
         <br>
         <br>
         <input type="submit" value="Submit">
@@ -23,7 +23,7 @@
     @foreach($payloads as $payload)
     <div class="bg-white shadow rounded my-3 p-4">
         <p class="fs-5 fw-bold">{{ $payload->name }}</p>
-        <p>Phone no: {{ $payload->phone }}</p>
+        <p>Port no: {{ $payload->port }}</p>
     </div>
     
     @endforeach
